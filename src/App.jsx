@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link, useParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import "tailwindcss/tailwind.css";
 
@@ -39,7 +39,7 @@ function PostPage({ id }) {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/vibeCoding">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/post/:id" element={<PostRouteWrapper />} />
