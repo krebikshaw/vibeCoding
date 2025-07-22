@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/你的-repo-name/', // ⚠️ 改成你的 GitHub Repo 名稱
+  base: '/vibeCoding/', // ⚠️ 改成你的 GitHub Repo 名稱
 })
